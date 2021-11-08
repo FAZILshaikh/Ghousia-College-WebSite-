@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+body { 
+background: #599fd9;
+background-image: linear-gradient( 135.9deg,  rgb(25, 225, 252) 16.4%, rgb(31, 165, 102) 56.1% );
+min-height: 100vh;
+overflow-x: hidden;
+}
+  html{
+    scroll-behavior: smooth;
+  }
+   .vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+   .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+  }  
+  
+  #sidebar.active {
+    margin-left: -17rem;
+    
+   
+  }
+  
+  #content.active {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .separator {
+    margin: 3rem 0;
+    border-bottom: 1px dashed #fff;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  .text-gray {
+    color: #aaa;
+  }
+  .nav-link{
+      text-transform: capitalize;
+  }
+  .nav-link:hover{
+      background:#f3f2f2;
+  }
+  .text-primary{
+      color:#7579e7 !important;
+  }
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+  }
+
+  .container1 {
+    width: auto;
+    margin-top: 50px;
+  }
+  
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .btn1 {
+    position: relative;
+    letter-spacing: 0.25em;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    color: #333333;
+  }
+  .btn1::after, .btn1::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    transform: skewX(30deg);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: -2;
+  }
+  .btn1::before {
+    background-color: #ff006a;
+    top: -1rem;
+    left: 0rem;
+  }
+  .btn1::after {
+    background-color: #dcdbdd;
+    top: 1rem;
+    left: 9rem;
+  }
+  .btn1:hover::before, .btn1:hover::after {
+    top: 0;
+    transform: skewx(0deg);
+  }
+  .btn1:hover::after {
+    left: 0rem;
+  }
+  .btn1:hover::before {
+    left: 8.75rem;
+  }

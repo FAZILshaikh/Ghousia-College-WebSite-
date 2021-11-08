@@ -1,0 +1,260 @@
+body { 
+    background: #a10c0c;
+    
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+   .vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+  .nav{
+      text-align: left;
+  }
+  .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+  } 
+  
+  #sidebar.active {
+    margin-left: -17rem;
+  }
+  
+  #content.active {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .separator {
+    margin: 3rem 0;
+    border-bottom: 1px dashed #fff;
+  }
+ 
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  .text-gray {
+    color: #aaa;
+  }
+  .nav-link{
+      text-transform: capitalize;
+  }
+  .nav-link:hover{
+      background:#f3f2f2;
+  }
+  .text-primary{
+      color:#7579e7 !important;
+  }
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+  }
+  
+  
+  
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:silver;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: purple;
+}
+html::-webkit-scrollbar-thumb{
+    background:  blue;
+}
+
+.about,.skills,
+.education,.languages,
+.contact,.experience{
+     padding: 40px;
+     min-height: 330px;
+
+}
+
+
+.education,.languages
+.contact,.experience{
+    margin-top: 30px;
+
+}
+
+
+header{
+    text-align: center;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 140px;
+
+}
+
+
+
+
+header img{
+    display: inline-block !important;
+    border: 3px solid white;
+    padding: 5px;
+    width: 25%;
+
+}
+header h1{
+    color: rgb(255, 255, 255);
+}
+header h2{
+    padding-top: 40px;
+
+}
+
+
+.about{
+    background: white;
+}
+
+.skills{
+    background:rgb(147, 30, 151);
+    color: #f5f5f5;
+
+}
+
+.skills .progress{
+     margin-top: 5px;
+    border-radius: 0px;
+    height: 4px;
+}
+
+.skills .progress .progress-bar-primary{
+    
+    background: #1C0F57;
+}
+
+.skills strong{
+    display: inline-block;
+    font-weight: normal;
+    padding-bottom: 6px;
+    margin-top: 15px;
+}
+.pull-right{
+    margin-top: 15px;
+}
+
+.education{
+    background: rgb(147, 30, 151);
+    color: #f5f5f5;
+
+}
+
+.education h5{
+    display: inline-flex; 
+
+}
+
+
+.education span{
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.languages{
+    background: white;
+    margin-top: 31px;
+}
+
+.languages ul{
+    padding: 10px;
+}
+
+.languages ul li{
+    padding-bottom: 6px;
+}
+
+
+
+
+.contact{
+    background: white;
+    margin-top: 27px;
+    
+
+}
+
+
+
+.experience{
+    background: rgb(147, 30, 151);
+    color: #f5f5f5;
+    
+}
+
+.experience-content{
+    padding-bottom: 14px;
+}
+
+.experience h5{
+    display: inline-block;
+}
+
+
+.experience span{
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+.fa-facebook,.fa-google-plus,.fa-instagram,
+.fa-twitter,.fa-whatsapp,.fa-github{
+    color: rgb(21, 255, 0);
+}
+
+#copy{
+    margin-top: 70px;
+}
+.social-icons{
+color: white;
+margin-top: 50PX;
+display: flex;
+text-align: center;
+justify-content: space-evenly;
+font-size: 22PX;
+list-style-type: none;
+word-spacing: 2px;
+padding: 5px;
+}
+h6{
+    text-align: center;
+    text-shadow: silver;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+#text{
+    color: white;
+}
+

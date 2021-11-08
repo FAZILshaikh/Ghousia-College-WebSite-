@@ -1,0 +1,188 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  html::-webkit-scrollbar{
+    width:1.3rem;
+  }
+  
+  html::-webkit-scrollbar-track{
+    background:rgb(150, 119, 185);
+  }
+  
+  html::-webkit-scrollbar-thumb{
+    background: purple;
+  }
+  html::-webkit-scrollbar-thumb{
+    background:  rgb(78, 10, 155);
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color: rgb(139, 138, 138);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 14px;
+    width: 15.8%;
+    height: 9%;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid white;
+    
+  }
+  .tablink1 {
+    background-color:transparent;
+    float: left;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+  }
+  #home:hover{
+    color:red;
+    border-bottom: .2rem solid rgb(105, 13, 51);
+    
+}
+
+  .logo_h .logo {
+    cursor:pointer;
+  }
+  
+  
+
+  .tablink:hover {
+    color:rgb(123, 255, 0);
+    border-bottom: .2rem solid rgb(88, 0, 170);
+    padding:.7rem 0;
+    background-color:rgb(236, 222, 247);
+    color: black;
+    transition-duration: .3s;
+    
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: rgb(170, 170, 170);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    padding-top: 150px;
+  }
+  
+  #MECHANICAL {background-color: rgb(255, 255, 255);}
+  #CIVIL {background-color: white;}
+  #CSE {background-color: white;}
+  #ELECTRONICS {background-color: white;}
+  #ELECTRONICS {background-color: white;}
+  #IS {background-color: white;} 
+  #CIVIL h2{
+    color: rgb(105, 9, 105);
+  }
+  #CV{
+    color: rgb(105, 9, 105);
+  }
+  #CS{
+    color: rgb(17, 110, 95);
+  }
+  #EC{
+    color: rgb(247, 169, 25);
+  }
+  #EE{
+    color: rgb(128, 0, 17);
+  }
+  #IS{
+    color:rgb(231, 100, 48);
+  }
+
+  .deptimg {
+    position:absolute;
+    justify-content: center;
+    display: inline-block;
+    margin-top:18px;
+    margin-left:165px;
+    width:170px;
+    height:170px;
+}
+
+.imgtext{
+    margin-top: 550px;
+    position:relative;
+    float:center;
+    text-align:left;
+    margin-left:30px;
+    font-size:14px;
+    color:#333;
+    
+    
+}
+.imgtext p{
+    font-size: 19px;
+    margin-left: auto;
+}
+h3{
+    color: rgb(4, 0, 255);
+}
+h2{
+  color:rgb(4, 0, 255);
+}
+.imgtext h5{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(4, 0, 255);
+}
+
+#home{
+  color: gray;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#home a{
+  text-decoration: none;
+  cursor: pointer;
+  color: gray;
+}
+
+#home a:hover{
+  
+  color: purple;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-bottom: 50px;
+  display: flex;
+  
+}
+
+
+
+div.gallery img {
+  width: 500px;
+  height: 300px;
+  border: 2px solid rgb(112, 112, 112);
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgb(161, 159, 161);
+  
+}
+
+.lab,#lab{
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: black !important;
+
+}
